@@ -8,7 +8,12 @@
     "version": "1.0",
     "action": {
       "default_popup": "hello.html",
-      "default_icon": "hello_extensions.png"
+      "default_icon": "favicon.png"
     },
-    "permissions": ["storage", "https://api.unsplash.com/"]
+    "permissions": ["storage", "https://api.unsplash.com/"],
+    "icons": {
+      "16": "favicon.png",
+      "48": "favicon.png",
+      "128": "favicon.png"
+    }
 }
