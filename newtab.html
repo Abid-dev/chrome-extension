@@ -7,6 +7,7 @@
     <title>Custom New Tab</title>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Special+Elite');
+
         body {
             font-family: 'Special Elite', cursive;
             margin: 0;
@@ -81,6 +82,27 @@
             align-items: center;
             padding: 20px;
         }
+
+        .credits-container {
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .credit-links {
+            color: white;
+            font-family: system-ui;
+            text-decoration: none;        
+        }
+
+        .credit-links:hover {
+            color: rgb(60, 96, 139);
+        }
     </style>
 </head>
 
@@ -92,6 +114,10 @@
                 went
                 out.</blockquote>
             <cite id="quote-author">Aldous Huxley</cite>
+        </div>
+        <div class="credits-container">
+            <a href="" id="photographer" class="credit-links">Photographer Name</a>
+            <a href="https://unsplash.com" class="credit-links">Unsplash</a>
         </div>
     </div>
     <script src="script.js" defer></script>
