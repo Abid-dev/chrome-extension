@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const imageContainer = document.getElementById("image-container");
+  const photographer = document.getElementById("photographer");
 
   // API end point
   const unsplashApiKey = "HQhfmMx-55s1d-Gp69C6ccEeGVxTNyBMGyemmwB7wGI";
@@ -11,7 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((data) => {
       console.log(data);
       const imageUrl = data.urls.regular;
+      const imagePhotographer = data.user.name;
+      const imagePhotographerUrl = data.user.links.html;
       imageContainer.style.backgroundImage = `url(${imageUrl})`;
+      photographer.innerHTML = `${imagePhotographer}`;
+      photographer.href = `${imagePhotographerUrl}`;
     })
     .catch((error) => console.error("Error fetching Unsplash image:", error));
 
