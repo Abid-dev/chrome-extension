@@ -10,7 +10,14 @@
       "default_popup": "hello.html",
       "default_icon": "favicon.png"
     },
-    "permissions": ["storage", "https://api.unsplash.com/"],
+    "permissions": ["storage", "https://api.unsplash.com/", "webNavigation", "activeTab", "declarativeNetRequest",
+    "declarativeNetRequestFeedback"],
+    "declarative_net_request" : {
+      "rule_resources" : [{
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }]},
     "icons": {
       "16": "favicon.png",
       "48": "favicon.png",
