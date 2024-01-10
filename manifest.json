@@ -9,8 +9,12 @@
     "chrome_url_overrides": {
       "newtab": "newtab.html"
     },
-    "permissions": ["storage", "https://api.unsplash.com/", "webNavigation", "activeTab", "declarativeNetRequest",
-    "declarativeNetRequestFeedback"],
+    "permissions": ["storage", 
+    "webNavigation", 
+    "activeTab", 
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ],
     "declarative_net_request" : {
       "rule_resources" : [{
         "id": "ruleset_1",
