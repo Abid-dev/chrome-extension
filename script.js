@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch(unsplashApiUrl)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       const imageUrl = data.urls.regular;
       const imagePhotographer = data.user.name;
       const imagePhotographerUrl = data.user.links.html;

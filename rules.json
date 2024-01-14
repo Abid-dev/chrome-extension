@@ -78,5 +78,13 @@
         "condition" : {
           "urlFilter" : "*://*criteo.com/*"
         }
+    },
+    {
+        "id" : 11,
+        "priority": 1,
+        "action" : { "type" : "block" },
+        "condition" : {
+          "urlFilter" : "*://*ex.co/*"
+        }
     }
 ]
